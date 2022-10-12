@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <script>
+            var input = parseInt(prompt("Please enter a number"));
+
+            document.write("For loop:<br/>");
+            for (var i=1; i<=input; i++) {
+                if (i%3 == 0) {
+                    continue;
+                }
+                document.write(i+"<br/>");
+            }
+
+            var start = 1;
+            document.write("While loop:<br/>");
+            while (start<=input) {
+                if (start%3 == 0) {
+                    start++;
+                    continue;
+                }
+                document.write(start+"<br/>");
+                start++;
+            }
+
+            start = 1;
+            document.write("Do-while loop:<br/>");
+            do {
+                if (start%3 == 0) {
+                    start++;
+                    continue;
+                }
+                document.write(start+"<br/>");
+                start++;
+            } while (start<=input);
+        </script>
+    </head>
+
+    <body>
+    </body>
+</html>
