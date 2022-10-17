@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6</title>
+        <script>
+            function handleMouseOver(element) {
+                element.style.color = "red";
+                element.style.backgroundColor = "black";
+                element.innerHTML = "MOUSE OVER";
+            }
+
+            function handleMouseOut(element) {
+                element.style.color = "yellow";
+                element.style.backgroundColor = "green";
+                element.innerHTML = "MOUSE OUT";
+            }
+        </script>
+    </head>
+
+    <body>
+        <p onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">MOUSE EVENT HANDLING</p>
+    </body>
+</html>
