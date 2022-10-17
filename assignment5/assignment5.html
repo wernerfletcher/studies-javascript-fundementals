@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <script>
+            function calculateGrade() {
+                var math = parseInt(prompt("Enter marks for Maths"));
+                var phys = parseInt(prompt("Enter marks for Physics"));
+                var chem = parseInt(prompt("Enter marks for Chemistry"));
+
+                var avg = (math+phys+chem)/3;
+                document.write("Average: "+avg+"<br/>");
+
+                if (avg >= 90) {
+                    document.write("Grade: A");
+                }
+                if (avg > 70 && avg < 90) {
+                    document.write("Grade: B");
+                }
+                if (avg <= 70) {
+                    document.write("Grade: C");
+                }
+            }
+
+            calculateGrade();
+        </script>
+    </head>
+
+    <body>
+    </body>
+</html>
